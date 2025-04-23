@@ -311,3 +311,50 @@ Tampa Bay  2.90
 Arizona    4.71
 
 The formula discouraged me from picking any other games because the team with the better record either had a lower on-base percentage, starting pitcher ERA, runs scored, or runs allowed ranking.
+
+I can't use factor analysis because the starting pitchers' ERA's and momentum variables change every game. If I excluded them, I think it would be possible. Google AI provided an excellent example of generic analysis with Python. I would probably need to replace the data at the beginning with every team's On-Base Percentage, Starting Pitcher ERA's, Runs Scored Per Game, and Runs Allowed Per Game. 
+
+import pandas as pd
+from factor_analyzer import FactorAnalyzer
+import matplotlib.pyplot as plt
+
+# Sample data (replace with your own dataset)
+data = {'Variable1': [5, 8, 6, 7, 9, 4],
+        'Variable2': [3, 6, 4, 5, 7, 2],
+        'Variable3': [6, 9, 7, 8, 10, 5],
+        'Variable4': [2, 5, 3, 4, 6, 1],
+        'Variable5': [7, 10, 8, 9, 11, 6]}
+
+df = pd.DataFrame(data)
+
+# Determine the number of factors (using Kaiser's rule - eigenvalues > 1)
+fa = FactorAnalyzer(n_factors=df.shape[1], rotation=None)
+fa.fit(df)
+ev, v = fa.get_eigenvalues()
+
+# Plotting the scree plot
+plt.scatter(range(1, df.shape[1] + 1), ev)
+plt.plot(range(1, df.shape[1] + 1), ev)
+plt.title('Scree Plot')
+plt.xlabel('Factors')
+plt.ylabel('Eigenvalue')
+plt.grid()
+plt.show()
+
+# Based on the scree plot or Kaiser's rule, determine the optimal number of factors
+# For example, if 2 factors are chosen:
+n_factors = 2
+fa = FactorAnalyzer(n_factors=n_factors, rotation='varimax')  # Using varimax rotation
+fa.fit(df)
+
+# Factor loadings
+loadings = fa.loadings_
+print("Factor Loadings:\n", loadings)
+
+# Get variance of each variable explained by the factors (communalities)
+communalities = fa.get_communalities()
+print("\nCommunalities:\n", communalities)
+
+# Get variance explained by each factor
+variance_explained = fa.get_factor_variance()
+print("\nVariance Explained (Variance, Proportion, Cumulative):\n", variance_explained)

@@ -1,0 +1,8 @@
+April 23, 2025
+
+On more than one occasion, I have tried to create a prediction formula that takes all of the MLB's more important team stats into account to predict scores. For some reason, my NFL formula really didn't work with either NBA or NHL games. The only two major North American sports leagues left are the MLB and PGA Tour, but I can't imagine I will be able to create a formula that correctly predicts what every golfer will shoot every round. I will start by posting my current MLB Formula
+
+Team_Score = Average_Runs_Scored_Per_Game + (Coaching (Out of 10) / 20) + (Weather (Out of 10) / 30) - ((62 - (Runs Allowed Per Game Ranking) - (Starting Pitcher ERA Ranking)) / 30) - (Opponent's Coaching (Out of 10) / 40) +- Momentum (Up to +- 0.6) 
+
+
+So far, my formula does a really bad job predicting upsets. I'm hoping to find a team stat that has a strong positive correlation with predicting upsets or at least discourages me from picking certain games. 

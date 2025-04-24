@@ -301,16 +301,51 @@ So far, on-base percentage seems to be the best predictor of upsets.
 
 After changing the pitching denominator to 20, the formula yielded the following scores for April 23, 2025.
 
-Pittsburgh  3.00
-LA Angels   2.24
+Pittsburgh  3.00                3
+LA Angels   2.24                0
+ 
+Seattle  3.38                   8
+Boston   4.12                   5
 
-Seattle  3.38
-Boston   4.12
-
-Tampa Bay  2.90
-Arizona    4.71
+Tampa Bay  2.90                 7
+Arizona    4.71                 6
 
 The formula discouraged me from picking any other games because the team with the better record either had a lower on-base percentage, starting pitcher ERA, runs scored, or runs allowed ranking.
+
+April 24, 2025- The formula was a disaster last night. The runs allowed per game stat was lower for nine of the 12 teams last night. If that was the only stat that mattered, the following teams would win tonight:
+
+Washington
+Seattle
+Kansas City
+Minnesota 
+Pittsburgh
+Tampa Bay
+San Francisco
+Texas
+
+I hypothesize that the starting pitchers' ERA's (SP ERA) are almost as important because they predicted seven of the 12 winners. If the SP ERA was the only stat that mattered, the following teams would win tonight:
+
+Washington
+Boston
+Kansas City
+Chicago White Sox
+LA Angels
+Tampa Bay
+Texas
+
+Runs scored per game only favoured six of the 12 teams. I will post the teams with the higher averages to see if they help predict winners tonight:
+
+Baltimore
+Boston
+Colorado
+Minnesota
+LA Angels
+Arizona
+Milwaukee
+Athletics
+
+
+
 
 I can't use factor analysis because the starting pitchers' ERA's and momentum variables change every game. If I excluded them, I think it would be possible. Google AI provided an excellent example of generic analysis with Python. I would probably need to replace the data at the beginning with every team's On-Base Percentage, Starting Pitcher ERA's, Runs Scored Per Game, and Runs Allowed Per Game. 
 

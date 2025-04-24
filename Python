@@ -355,7 +355,7 @@ The winners on April 24th were:
 
 
 
-
+It's possible I've been calculating scores backwards. It may be more about how many runs a team will give up (runs allowed plus starting pitcher's ERA).
 I can't use factor analysis because the starting pitchers' ERA's and momentum variables change every game. If I excluded them, I think it would be possible. Google AI provided an excellent example of generic analysis with Python. I would probably need to replace the data at the beginning with every team's On-Base Percentage, Starting Pitcher ERA's, Runs Scored Per Game, and Runs Allowed Per Game. 
 
 import pandas as pd

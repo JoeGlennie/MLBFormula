@@ -402,3 +402,19 @@ print("\nCommunalities:\n", communalities)
 # Get variance explained by each factor
 variance_explained = fa.get_factor_variance()
 print("\nVariance Explained (Variance, Proportion, Cumulative):\n", variance_explained)
+
+April 28, 2025
+
+After checking the correlations between all of the important stats and outcomes, runs allowed per game is the most important statistic for picking winners. The starting pitcher's ERA (after pitching at least 20 innings) and runs scored per game are also important. For runs scored per game, my research suggested that the run differential should be less than 0.5 runs in favour of the underdog. There aren't many situations where the team with the lower runs per game and starting pitcher ERA also has the edge in runs scored per game. 
+
+Predictions
+
+NYM  (0.5)(2.76) + (0.3)(3.12) + (0.2)(4.07) = 4.78
+Wsh  (0.5)(4.83) + (0.3)(5.11) + (0.2)(4.11) = 3.12
+
+Det  (0.5)(3.28) + (0.3)(2.63) + (0.2)(3.54) = 4.03
+Hou  (0.5)(3.38) + (0.3)(5.01) + (0.2)(4.2)  = 3.14
+
+Mia  (0.5)(5.29) + (0.3)(5.00) + (0.2)(4.59) = 4.18
+LAD  (0.5)(4.32) + (0.3)(3.68) + (0.2)(4.38) = 5.02
+

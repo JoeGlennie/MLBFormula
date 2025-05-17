@@ -533,3 +533,16 @@ I only went four for ten, so the formula isn't accurate enough to turn a profit.
 May 10, 2025
 
 For head-to-head matchups, I would need to achieve at least 72% accuracy. I will do one final check to determine whether any pitching or hitting statistics are connected. So far, batting average and WHIP seem to be the only relevant stats.
+
+May 17, 2025
+
+The batting average and WHIP stats had little to no impact on outcomes. I noticed that checking all of the starting pitchers' game logs really helped. For example, for the game between Seattle and San Diego, my forumula indicates a final score of 4.93 to 3.66 for San Diego. However, the starting pitcher for San Diego (Jake Pivetta) got lit up by the Colorado Rockies in his last outing, so I decided to avoid that game.
+
+Was   (0.6)(5.35) + (0.2)(4.00) + (0.2)(3.70) = 5.88    Starting pitcher range = 0 to 6    Average 6 innings pitched              Head to head odds = 1.60
+Bal   (0.6)(5.44) + (0.2)(9.00) + (0.2)(4.07) = 4.75    Starting pitcher range = 3 to 9    Average 3.8 innings pitched
+
+TB    (0.6)(4.05) + (0.2)(3.38) + (0.2)(4.12) = 5.90      range = 0 to 4                           5 innings pitched              Head to head odds = 2.33
+Mia   (0.6)(5.81) + (0.2)(8.10) + (0.2)(3.95) = 3.93      range = 2 to 7                          4.8 innings pitched
+
+
+
